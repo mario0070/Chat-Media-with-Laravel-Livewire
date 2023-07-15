@@ -1,0 +1,404 @@
+body{
+    background: white;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#getChat:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.717);
+    transition: .3s;
+    color: white;
+}
+
+#getChat{
+    transition: .3s;
+}
+
+
+#getChat:active{
+    transform: scale(1.1);
+}
+
+
+
+/* navigator */
+body .container .navigator{
+    background: linear-gradient(to bottom, #ff9900 0%, #ffff99 100%);
+    height: 100vh;
+    position: fixed;
+    width: 2em;
+    padding: 1em;
+    overflow: hidden;
+}
+
+body .container .navigator i{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: black;
+    transition: .3s;
+}
+
+body .container .navigator i:hover{
+    color: rgba(17, 16, 16, 0.566);
+    transition: .3s;
+    transform: scale(1.5);
+}
+
+body .container .navigator a:hover{
+    color: green;
+    transition: .3s;
+}
+
+body .container .navigator a{
+    text-decoration: none;
+    transition: .5s;
+    color: black;
+}
+
+body .container .navigator .icons .last{
+    bottom: 0;
+    position: absolute;
+    transform: translateY(-50px);
+}
+
+/* Users  */
+body .container .users{
+    background: linear-gradient(to top,#ff9900 0%, #ffff99 100%);
+    height: 88vh;
+    position: fixed;
+    margin-left: 6.5em;
+    width: 20%;
+    margin-top: 2em;
+    border-radius: .5em;
+    overflow: scroll;
+    transition: .5s;
+    /* padding: 1em; */
+    color: black;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body .container .users .header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#ff9900 0%, #ffff99 100%);
+    padding: 1em;
+    border-radius: .5em .5em 0 0;
+    position: fixed;
+    width: 17.5%;
+    color: black;
+    border-bottom: solid 1px black;
+}
+
+body .container .users .search{
+    padding-top: 4em;
+}
+
+body .container .users .search input{
+    padding: 1em;
+    border-radius: .3em;
+    border: none;
+    margin: 1em;
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+body .container .users .user{
+    padding: 1em;
+    display: flex;
+    border-bottom: solid 1px black;
+    height: 3em;
+    overflow: hidden;
+} 
+
+body .container .users .user h4{
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: .3em;
+   width: 100%;
+} 
+
+body .container .users .user p{
+    inline-size: 150px;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ } 
+
+body .container .users .user .img{
+    border-radius: .3em;
+    margin-right: 10%;
+    padding: 1em;
+    background-color:rgba(0, 0, 0, 0.226);
+} 
+
+body .container .users .user .img i{
+    font-size: 2.3em;
+}
+
+
+/* Users  */
+body .container .chatBox{
+    background: linear-gradient(to top,#ff9900 0%, #ffff99 100%);
+    height: 82vh;
+    position: fixed;
+    margin-left: 30%;
+    width: 60%;
+    margin-top: 2em;
+    border-radius: .5em;
+    overflow: scroll;
+
+}
+
+
+/* chat Header */
+body .container .chatBox .header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 60%;
+    background: linear-gradient(to top,#ff9900 0%, #ffff99 100%);
+    border-bottom: 1px solid whitesmoke;
+    transform: translateY(-15px);
+    color: black;
+    border-radius: .3em .3em 0 0;
+}
+
+body .container .chatBox .header .info{
+    display: flex;
+}
+
+body .container .chatBox .header h4{
+   margin-top: 1.2em;
+   margin-bottom: .3em;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body .container .chatBox .header p{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+body .container .chatBox  .img i{
+    font-size: 1.5em;
+    color: black;
+    margin: .5em;
+}
+
+
+
+/* header icons */
+body .container .chatBox .icons{
+    margin-top: 1em;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+body .container .chatBox i{
+    padding: .5em;
+    background: linear-gradient(to top,#ff9900 0%, #ffff99 100%);
+    border-radius: .3em;
+    margin-left: .3em;
+    transition: .3s;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.217);
+}
+
+body .container .chatBox i:hover{
+    cursor: pointer;
+    background: linear-gradient(to top,#ff9900 0%, #1f1f1c 100%);
+    transition: .3s;
+    color: white;
+}
+
+
+/* Msg Text */
+.container .chatBox .msg{
+    margin-bottom: 13em;
+    font-style: italic;
+    font-weight: 100;
+    padding: 1em;
+}
+
+.container .chatBox .msg h3{
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 1.5em;
+    color: black;
+}
+
+.container .chatBox .msg .msgBody{
+    margin: 1em;
+    background-color: grey;
+    padding: .5em;
+    overflow-wrap: break-word;
+    display: inline-block;
+    border-radius: 0 .8em .8em .8em;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .chatBox .msg .msgBody div ,.container .chatBox .msg .sentMsg .myMsg div{
+    margin-top: .3em;
+    color: rgba(255, 255, 255, 0.539);
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+}
+
+.container .chatBox .msg .sentMsg{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em;
+}
+
+.container .chatBox .msg .wrap1{
+    margin-right: 15em;
+}
+
+.container .chatBox .msg .wrap2{
+    margin-left: 15em;
+}
+
+.container .chatBox .msg .sentMsg .myMsg{
+    margin-top: .3em;
+    background: black;
+    border-radius: .8em 0 .8em .8em;
+    padding: .5em;
+    display: inline-block;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.217);
+    overflow-wrap: break-word;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Msg Input */
+body .container .chatBox .typeMsg input{
+    padding: 1.2em;
+    border: none;
+    margin-bottom: 3.4em;
+    width: 57.7%;
+    margin-left:-.1em;
+    border-radius: 0 0 .3em .3em ;
+    background: black;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    position: relative;
+}
+
+body .container .chatBox .typeMsg{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body .container .chatBox .typeMsg input::placeholder{
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container .chatBox .typeMsg button{
+    background-color: whitesmoke;
+    z-index: 100;
+    padding: 15.5px;
+    margin-left: 51%;
+    border: none;
+    color: black;
+    position: fixed;
+    font-weight: bold;
+    transition: .3;
+    border-bottom-right-radius: .3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .chatBox .typeMsg button:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body .container .users{
+      opacity: 0.0;
+      transform: translateX(300px);
+      transition: .2s;
+    }
+
+    body .container .chatBox{
+       margin-left: 5.5em;
+       width: 65%;
+       height: 90vh;
+       margin-top: 1em;
+    }
+
+    #users.valid{
+       opacity: 1.0;
+       transform: translateX(-20px);
+       z-index: 100;
+       width: 80%;
+       background-color: black;
+       height: 100vh;
+       margin-top: 0;
+       border-radius: 0;
+    }
+
+    body .container .users .header{
+        border-radius:0;
+        width: 92.5%;
+    }
+
+    body .container .chatBox .header .icons{
+        display: none;
+    }
+
+    body .container .chatBox .typeMsg input{
+        margin-bottom: 1.4em;
+        width: 65%;
+    }
+
+    .container .chatBox .typeMsg button{
+        padding: 15.5px;
+        margin-left: 38.1%;
+        /* transform: translateX(-50px); */
+        border-bottom-right-radius: .3em;
+        background-color: green;
+        transition: .4s;
+    }
+
+    .container .chatBox .typeMsg button:hover{
+        color: black;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: .4s;
+        background-color: green;
+    }
+
+    .container .chatBox .msg .msgBody{
+        max-width: 10em;
+    }
+
+    .container .chatBox .msg .wrap1{
+        margin-right: 2em;
+    }
+    
+    .container .chatBox .msg .wrap2{
+        margin-left: 2em;
+    }
+
+  }
